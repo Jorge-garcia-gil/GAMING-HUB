@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticación - GamingHub</title>
+    <link rel="stylesheet" href="../CSS/estiloAut.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GAMING-<span class="texto">HUB</span></h1>
+    </header>
+
+    <main>
+
+        <div id="autenticacion">
+
+            <div id="ladoIzquierdo">
+                <img src="imagenes/IMAGEN-AUT.jpg">
+                <div id="sombra"></div>
+                <h2>ÚNETE A LA COMUNIDAD</h2>
+                <p id="subtitulo">Gestiona tu biblioteca, comparte reseñas y sigue tu progreso gaming.</p>
+            </div>
+
+            <div id="ladoDerecho">
+
+                <h2>Bienvenido</h2>
+
+                <div id="botonesInicio">
+                    <button type="button" class="inicio activo" id="btnLogin">Iniciar Sesión</button>
+                    <button type="button" class="inicio" id="btnRegistro">Registrarse</button>
+                </div>
+
+                <form method="post" name="inicioSesion" id="formLogin" class="formulario">
+
+                    <h3>Iniciar Sesión</h3>
+
+                    <input placeholder="Correo electrónico" type="email" id="correoLogin" name="correoLogin" required>
+                    <br>
+
+                    <input placeholder="Contraseña" type="password" id="contrasenaLogin" name="contrasenaLogin" required>
+                    <br>
+
+                    <p><a href="#">¿Has olvidado tu contraseña?</a></p>
+
+                    <button type="submit">Entrar</button>
+
+                </form>
+
+                <form method="post" name="registro" id="formRegistro" class="formulario oculto">
+
+                    <h3>Regístrate</h3>
+
+                    <input placeholder="Nombre de usuario" type="text" id="nombreRegistro" name="nombreRegistro" required>
+                    <br>
+
+                    <input placeholder="Correo electrónico" type="email" id="correoRegistro" name="correoRegistro" required>
+                    <br>
+
+                    <input placeholder="Contraseña" type="password" id="contrasenaRegistro" name="contrasenaRegistro" minlength="8" required>
+                    <br>
+
+                    <input placeholder="Repite la contraseña" type="password" id="repiteContrasena" name="repiteContrasena" required>
+                    <br>
+
+                    <button type="submit">Registrarse</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>GamingHub - 2026</p>
+    </footer>
+
+    <script src="../JS/auth.js"></script>
+
+</body>
+
+</html>
